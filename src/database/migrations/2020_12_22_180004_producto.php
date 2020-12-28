@@ -15,8 +15,8 @@ class Producto extends Migration
     {
         Schema::create('productos', function (Blueprint $table) {
             $table->id();
-            $table->string(column: 'producto');
-            $table->boolean(column: 'comprado')->default(0);
+            $table->string('producto');
+            $table->boolean('comprado')->default(0);
             $table->timestamps();
         });
     }
